@@ -79,9 +79,6 @@ ship = Player(img_hero, 5, win_height - 100, 80, 100, 10)
 
 monsters = sprite.Group()
 
-for i in range(1, 6):
-    monster = Enemy(img_enemy, randint(80, win_width - 80), 40, 80, 50, randint(1,5))
-    monsters.add(monster)
 
 bullets = sprite.Group()
 
@@ -140,8 +137,8 @@ while run:
         time.delay(3000)
 
 
-    for i in range(1, 2):
-        monster = Enemy(img_enemy, randint(80, win_width - 80), 40, 80, 50, randint(1,2))
+    for i in range(0, 1):
+        monster = Enemy(img_enemy, randint(80, win_width - 80), 40, 80, 50, randint(1, 2))
         monsters.add(monster)
 
     time.delay(50)
